@@ -75,14 +75,14 @@
     background-image: url("../img/1-section/bg.svg");
     background-repeat: no-repeat;
 
-    .container-bg-banner{
+    .container-bg-banner {
       display: flex;
       flex-direction: column;
-      padding: 0 140px 70px 140px;
+      padding: 0 140px 100px 140px;
       margin: 0 auto;
       line-height: 0.7;
 
-      .container-bg-banner-text{
+      .container-bg-banner-text {
         color: #ffffff;
         text-align: left;
         font-family: "Lufga-SemiBold", sans-serif;
@@ -91,16 +91,16 @@
         font-weight: 600;
       }
 
-      .container-bg-banner-mid{
+      .container-bg-banner-mid {
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: left;
         align-items: center;
         gap: 115px;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
 
-        p:nth-child(1){
+        p:nth-child(1) {
           color: #ffffff;
           text-align: left;
           font-family: "Lufga", sans-serif;
@@ -110,14 +110,14 @@
           z-index: 2;
         }
 
-        .container-bg-banner-mid-leaf{
+        .container-bg-banner-mid-leaf {
           position: absolute;
           z-index: 1;
           left: 41%;
           top: -25%;
         }
 
-        p:nth-child(3){
+        p:nth-child(3) {
           color: #ffffff;
           text-align: left;
           font-family: "Lufga", sans-serif;
@@ -126,7 +126,8 @@
           font-weight: 800;
         }
       }
-      .container-bg-banner-bot-text{
+
+      .container-bg-banner-bot-text {
         color: #ffffff;
         text-align: left;
         font-family: "Lufga", sans-serif;
@@ -142,11 +143,54 @@
     //HEADER END
     //HEADER HEADER
 
-    .container-bg-bottom{
+    .container-bg-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 60px 20px 20px;
 
+      .container-bg-bottom-left-boxes {
+        display: flex;
+      }
+
+      .container-bg-1-box {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        backdrop-filter: blur(14px);
+        background: rgba(255, 255, 255, 0.2);
+
+        border: 1px solid #979797;
+        border-radius: 32px;
+        padding: 20px 50px 20px 20px;
+
+        gap: 20px;
+
+        p:nth-child(1) {
+          font-family: Lufga;
+          font-weight: 500;
+          font-size: 38px;
+          letter-spacing: -0.01em;
+          color: #fff;
+        }
+
+        p:nth-child(2) {
+          font-family: Lufga;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: -0.01em;
+          color: #fff;
+        }
+      }
+      .container-bg-bottom-bottom-box{
+        position: absolute;
+        left: 80%;
+      }
     }
   }
 }
+
+
 
 .header-nav {
   display: flex;
