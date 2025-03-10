@@ -50,9 +50,6 @@
 }
 .container .container-bg .container-bg-banner {
   display: flex;
-  flex-direction: column;
-  justify-content: left;
-  padding: 0 140px;
 }
 .container .container-bg .container-bg-banner .container-bg-banner-text {
   font-family: Lufga;
