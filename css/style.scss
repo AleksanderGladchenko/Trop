@@ -75,42 +75,75 @@
     background-image: url("../img/1-section/bg.svg");
     background-repeat: no-repeat;
 
-    .container-bg-banner {
+    .container-bg-banner{
       display: flex;
+      flex-direction: column;
+      padding: 0 140px 70px 140px;
+      margin: 0 auto;
+      line-height: 0.7;
 
-      .container-bg-banner-text {
-        font-family: Lufga;
-        font-weight: 600;
+      .container-bg-banner-text{
+        color: #ffffff;
+        text-align: left;
+        font-family: "Lufga-SemiBold", sans-serif;
         font-size: 48px;
-        letter-spacing: -0.01em;
-        color: #fff;
-        margin: 0;
-
-        padding-left: 155px;
+        letter-spacing: -0.015em;
+        font-weight: 600;
       }
 
-      .container-bg-banner-mid {
+      .container-bg-banner-mid{
         position: relative;
         display: flex;
         flex-direction: row;
         justify-content: left;
+        align-items: center;
+        gap: 115px;
+        padding-bottom: 30px;
 
-        p:first-child {
-          font-family: Lufga;
-          font-weight: 300;
-          font-size: 341px;
-          letter-spacing: -0.01em;
-          color: #fff;
-          z-index: 2;
+        p:nth-child(1){
+          color: #ffffff;
           text-align: left;
+          font-family: "Lufga", sans-serif;
+          font-size: 295px;
+          letter-spacing: -0.015em;
+          font-weight: 300;
+          z-index: 2;
         }
 
-
-        .container-bg-banner-mid-leaf {
+        .container-bg-banner-mid-leaf{
           position: absolute;
           z-index: 1;
+          left: 41%;
+          top: -25%;
+        }
+
+        p:nth-child(3){
+          color: #ffffff;
+          text-align: left;
+          font-family: "Lufga", sans-serif;
+          font-size: 341.9669494628906px;
+          letter-spacing: -0.015em;
+          font-weight: 800;
         }
       }
+      .container-bg-banner-bot-text{
+        color: #ffffff;
+        text-align: left;
+        font-family: "Lufga", sans-serif;
+        font-size: 20px;
+        letter-spacing: -0.015em;
+        font-weight: 400;
+        margin: 0 auto;
+        line-height: 1.3;
+      }
+    }
+
+    //HEADER HEADER
+    //HEADER END
+    //HEADER HEADER
+
+    .container-bg-bottom{
+
     }
   }
 }
