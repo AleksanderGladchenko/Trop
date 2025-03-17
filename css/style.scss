@@ -57,6 +57,23 @@
   padding: 17px 60px;
 }
 
+@mixin custom-button-style-black {
+  font-family: 'Lufga';
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.01em;
+  color: #151515;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid black;
+  border-radius: 32px;
+  padding: 32px 61px;
+}
+
 * {
   text-decoration: none;
   padding: 0;
@@ -144,6 +161,7 @@
     //HEADER HEADER
 
     .container-bg-bottom {
+      position: relative;
       display: flex;
       justify-content: space-between;
       padding: 0 60px 20px 20px;
@@ -182,67 +200,77 @@
           color: #fff;
         }
       }
-      .container-bg-bottom-bottom-box{
+
+      .container-bg-bottom-bottom-box {
         position: absolute;
-        left: 80%;
+        left: 73%;
+        top: 49%;
+        @include custom-button-style-black
+      }
+      .scroll-to-bottom{
+        position: absolute;
+        left: 89%;
+        bottom: 60%;
+        border: none;
+        background: none;
+        z-index: 5;
       }
     }
   }
-}
 
 
+  .header-nav {
+    display: flex;
+    padding: 37px 45px 124px 45px;
+    justify-content: space-between;
+    flex-direction: row;
 
-.header-nav {
-  display: flex;
-  padding: 37px 45px 124px 45px;
-  justify-content: space-between;
-  flex-direction: row;
+    .header-nav-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
 
-  .header-nav-left {
+      justify-content: center;
+
+      .header-nav-left-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .header-nav-left-home {
+        @include custom-button-style;
+      }
+    }
+
+    .header-nav-left-contact {
+      @include custom-button-style;
+    }
+
+    .header-nav-left-blog {
+      @include custom-button-style;
+    }
+  }
+
+  .header-nav-right {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    justify-content: center;
 
-    .header-nav-left-logo {
+    .header-nav-right-search {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .header-nav-left-home {
+    .header-nav-left-shop {
       @include custom-button-style;
     }
-  }
 
-  .header-nav-left-contact {
-    @include custom-button-style;
-  }
-
-  .header-nav-left-blog {
-    @include custom-button-style;
-  }
-}
-
-.header-nav-right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-
-  .header-nav-right-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .header-nav-left-shop {
-    @include custom-button-style;
-  }
-
-  .header-nav-left-login {
-    @include custom-button-style;
+    .header-nav-left-login {
+      @include custom-button-style;
+    }
   }
 }
 

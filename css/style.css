@@ -106,6 +106,7 @@
   line-height: 1.3;
 }
 .container .container-bg .container-bg-bottom {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 0 60px 20px 20px;
@@ -140,27 +141,47 @@
 }
 .container .container-bg .container-bg-bottom .container-bg-bottom-bottom-box {
   position: absolute;
-  left: 80%;
+  left: 73%;
+  top: 49%;
+  font-family: "Lufga";
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: -0.01em;
+  color: #151515;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 32px;
+  padding: 32px 61px;
 }
-
-.header-nav {
+.container .container-bg .container-bg-bottom .scroll-to-bottom {
+  position: absolute;
+  left: 89%;
+  bottom: 60%;
+  border: none;
+  background: none;
+  z-index: 5;
+}
+.container .header-nav {
   display: flex;
   padding: 37px 45px 124px 45px;
   justify-content: space-between;
   flex-direction: row;
 }
-.header-nav .header-nav-left {
+.container .header-nav .header-nav-left {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.header-nav .header-nav-left .header-nav-left-logo {
+.container .header-nav .header-nav-left .header-nav-left-logo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-nav .header-nav-left .header-nav-left-home {
+.container .header-nav .header-nav-left .header-nav-left-home {
   font-family: "Lufga";
   font-weight: 500;
   font-size: 18px;
@@ -174,7 +195,7 @@
   border-radius: 60px;
   padding: 17px 60px;
 }
-.header-nav .header-nav-left-contact {
+.container .header-nav .header-nav-left-contact {
   font-family: "Lufga";
   font-weight: 500;
   font-size: 18px;
@@ -188,7 +209,7 @@
   border-radius: 60px;
   padding: 17px 60px;
 }
-.header-nav .header-nav-left-blog {
+.container .header-nav .header-nav-left-blog {
   font-family: "Lufga";
   font-weight: 500;
   font-size: 18px;
@@ -202,18 +223,17 @@
   border-radius: 60px;
   padding: 17px 60px;
 }
-
-.header-nav-right {
+.container .header-nav-right {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.header-nav-right .header-nav-right-search {
+.container .header-nav-right .header-nav-right-search {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header-nav-right .header-nav-left-shop {
+.container .header-nav-right .header-nav-left-shop {
   font-family: "Lufga";
   font-weight: 500;
   font-size: 18px;
@@ -227,7 +247,7 @@
   border-radius: 60px;
   padding: 17px 60px;
 }
-.header-nav-right .header-nav-left-login {
+.container .header-nav-right .header-nav-left-login {
   font-family: "Lufga";
   font-weight: 500;
   font-size: 18px;

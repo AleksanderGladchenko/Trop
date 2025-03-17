@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Tropical Plants</title>
 </head>
-
+<body>
 <header>
 
     <!--    HEADER HEADER-->
@@ -90,13 +90,13 @@
                 </div>
 
 
-                <div class="container-bg-bottom-right-arrow">
-                    <a href="#"><img src="img/1-section/Arrow-down.svg" alt="arrow"></a>
-                </div>
+                <button id="scrollToBottomBtn" class="scroll-to-bottom">
+                    <img src="img/1-section/Arrow-down.svg" alt="arrow">
+                </button>
 
-                    <div class="container-bg-bottom-bottom-box">
-                        <p>Shop Tropical Plants</p>
-                    </div>
+                <div class="container-bg-bottom-bottom-box">
+                    <p>Shop Tropical Plants</p>
+                </div>
 
             </div>
 
@@ -106,7 +106,20 @@
 
 </header>
 
-<body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
+
+        if (scrollToBottomBtn) {
+            scrollToBottomBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: document.documentElement.scrollHeight,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
